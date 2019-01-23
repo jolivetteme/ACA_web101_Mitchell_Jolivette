@@ -1,0 +1,89 @@
+body {
+    box-sizing: border-box;
+}
+/**Profile picture**/
+.profile-pic img {
+    max-width:30%;
+    display: inline-block;
+    border: 1px solid red;
+
+
+}
+section.contact-info {
+    padding:10px;
+    font-size: 70%;
+    border:1px solid black;
+}
+.contact-info .name {
+    color:black;
+}
+.contact-info .position {
+    color:red;
+
+}
+.contact-info .description {
+    padding: 0 50px;
+}
+.experience {
+    background:black;
+    color:white;
+    padding:10px;
+}
+.experience .title {
+    color:blue;
+    font-size:150%;
+    border-bottom:1px solid blue;
+    padding:0 10px;
+}
+
+.experience ul.detail {
+    color:red;
+}
+
+/**Education**/
+.education {
+    background:purple;
+    color:white;
+    padding:10px;
+}
+.education .title {
+    color:grey;
+    font-size:150%;
+    border-bottom:1px solid grey;
+    padding:0 10px;
+}
+.education ul.detail {
+    color:black;
+}
+
+/** Awards **/
+.awards {
+    background:yellow;
+    color:white;
+    padding:10px;
+}
+.awards .title {
+    color:grey;
+    font-size:150%;
+    border-bottom:1px solid grey;
+    padding:0 10px;
+}
+.awards ul.detail {
+    color:black;
+}
+
+/** extraordinary **/
+.extraordinary {
+    background:blue;
+    color:white;
+    padding:10px;
+}
+.extraordinary .title {
+    color:black;
+    font-size:150%;
+    border-bottom:1px solid black;
+    padding:0 10px;
+}
+.extraordinary ul.detail {
+    color:black;
+}
