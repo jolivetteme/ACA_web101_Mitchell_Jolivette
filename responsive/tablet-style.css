@@ -36,10 +36,14 @@ img.profile-pic {
 
 @media (min-width: 576px) {
   body {
-    background:grey;
+
   }
   header {
+<<<<<<< HEAD:responsive/mobile-style.css
     text-align: center;
+=======
+* text-align: center; */
+>>>>>>> tablet-LandingPage:responsive/tablet-style.css
   }    width: 100%;
   img {
     text-align: center;
