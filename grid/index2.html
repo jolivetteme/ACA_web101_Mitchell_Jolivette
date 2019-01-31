@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1em;
+    /* grid-auto-rows: 100px; */
+    grid-auto-rows: minxmax(100px,auto);
+  }
+  .wrapper > div {
+    backgroundre;
+    padding:1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background:#aaa;
+    border:1px solid black;
+  }
+  .nested {
+    display:grid;
+  }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptatibus sequi commodi quam id, pariatur qui consectetur odit! Itaque alias magni expedita cumque nostrum dolor aut soluta nisi iusto, optio sit repellat quis ullam harum delectus voluptatem minima temporibus. Fuga!</div>
+    <div class="nested">
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+    </div>
+    <div>Eveniet odio harum, molestiae sunt.</div>
+    <div>Delectus facilis sapiente, alias quam!</div>
+    <div>Molestias facere veritatis distinctio, alias!</div>
+    <div>Consectetur pariatur ducimus harum nulla!</div>
+    <div>Nihil consequatur soluta expedita numquam.</div>
+    <div>A quaerat reiciendis, neque aspernatur.</div>
+    <div>Quasi architecto blanditiis est natus.</div>
+    <div>Consequuntur quia accusamus atque, sequi!</div>
+</div>
+</body>
+</html>
