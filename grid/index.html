@@ -4,33 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Grid</title>
-  <style>
-    * {
-      border:1px solid black;
-      box-sizing: border-box;
-      padding:5px;
-    }
-    body {
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style media="screen">
+    .container {
       display: grid;
-      grid-template-columns: 66.66% 33.33%;
-      grid-template-rows: 50% 50% 50% 50% 50% 50% 50% 50%;
-      padding:1rem;
+      grid-template-columns: 70% 30%;
+
+      grid-gap:1em;
     }
-    body div:nth-child(even) {
-      background:purple;
+    .container > div {
+      background: #eee;
+      padding: 1em;
+    }
+    .container > div:nth-child(odd) {
+      background:green;
       color:white;
     }
   </style>
 </head>
 <body>
-  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore amet doloremque reprehenderit dolores deleniti recusandae, ea, odit illum saepe alias repellendus quidem sequi culpa, animi nemo provident. Eos, distinctio incidunt.</div>
-  <div>Doloribus dolore atque blanditiis, dolor nulla dolorum perferendis dicta eaque. Cumque quis neque ex adipisci consequuntur harum tempore. Perferendis ipsa sint facilis sit aperiam animi, eum molestiae optio alias temporibus.</div>
-  <div>Explicabo consectetur error, est voluptas quisquam! Repudiandae quidem, sapiente velit! Voluptatum maxime porro, aperiam adipisci dolorem molestiae nisi et laudantium reiciendis illo ratione quos fugit reprehenderit distinctio optio veritatis error.</div>
-  <div>Dolorem delectus perferendis, atque voluptate, nihil, temporibus iste nulla, cumque eum minus at possimus. Id obcaecati impedit officiis aliquid! Rerum, veritatis fuga corrupti reprehenderit quae eaque enim magnam porro laboriosam.</div>
-  <div>Dolorum iure distinctio consectetur ea consequatur quibusdam, enim pariatur molestias vero velit fugiat magni quas ducimus fuga tenetur laboriosam at nihil omnis voluptas laudantium excepturi tempora est ut deserunt. Iusto.</div>
-  <div>Quae deleniti perferendis nam reiciendis reprehenderit atque nostrum praesentium laboriosam natus tenetur nobis eveniet harum, accusantium dolore, neque sit facilis quos, dicta eum enim possimus! Harum ipsum et vel in.</div>
-  <div>A accusamus, dicta officiis rem enim nemo necessitatibus voluptas? Recusandae obcaecati laboriosam iusto praesentium voluptatibus impedit deleniti. Rerum voluptatem inventore ipsum, aut voluptas officiis saepe quos at totam doloremque? Perferendis.</div>
-  <div>Aliquam maxime ipsum sequi dolorem quis a unde ipsa quam, provident aperiam nemo dolor natus voluptas sed dignissimos, commodi obcaecati corporis doloremque incidunt, qui reiciendis libero blanditiis. Est, vero maxime.</div>
+  <div class="container">
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum natus porro culpa, quos cupiditate reprehenderit, laborum, fuga fugiat autem, ea delectus explicabo. Aspernatur repellat facilis exercitationem laboriosam perferendis placeat adipisci non saepe. Iusto veritatis suscipit, quos sunt voluptatibus nam ipsum saepe eligendi culpa voluptatem dolorum facilis. Quod obcaecati repellat perferendis enim nemo necessitatibus molestiae, at voluptates rerum, odit quaerat modi ex ipsum tempora nostrum a sit tempore sed placeat recusandae blanditiis labore ratione architecto illum, reprehenderit. Explicabo, et molestias illo.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, vitae. Mollitia veniam illum quod maiores dolorum. Adipisci enim ut cumque quia at! Repellendus aspernatur, eius ipsam. Facere debitis, nemo perferendis.</div>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, nihil sit placeat, ut tempore doloremque quaerat fugiat a reiciendis omnis perspiciatis. Id blanditiis molestiae culpa cumque aliquam alias placeat ullam.</div>
+    <div>Lorem ipsum dolor sit amet.</div>
+</div>
 </body>
 </html>
