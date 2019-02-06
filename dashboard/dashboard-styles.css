@@ -1,0 +1,25 @@
+* {
+  outline:1px solid black;
+}
+body {
+}
+main.container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.left-row {
+  grid-column-start: 1;
+  background:red;
+}
+section.greeting {
+  /* background:red; */
+}
+section.calculator {
+  /* background:green; */
+}
+section.date-clock {
+  /* background:yellow; */
+}
+section.todo-list {
+  /* background:blue; */
+}
