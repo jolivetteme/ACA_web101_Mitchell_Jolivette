@@ -1,25 +1,80 @@
-* {
-  outline:1px solid black;
+/** Calculator **/
+/* section.calculator * {border:1px solid red;}  /*for debugging purposed */
+section.calculator {
+  background:#3D013C;
+  padding:1rem;
+  display: grid;
+  grid-template-rows: 50% 50%;
 }
-body {
-}
-main.container {
+  section.calculator div.display {
+    border:3px solid #4AF8FE;
+    border-radius: 3px;
+    font-family: 'Orbitron', sans-serif;
+    font-size:2rem;
+    background:lightblue;
+    padding:1rem;
+    margin:1rem;
+    text-align: right;
+    color:black;
+  }
+    section.calculator div.buttons {
+    display: grid;
+    background:lightgrey;
+    border:6px solid #4eb5f1;
+    border-radius: 10px;
+    padding:1rem;
+    grid-template-columns: 8rem auto;
+  }
+      section.calculator div.numbers {
+    display: grid;
+    grid-template-columns: repeat(3,33.33%);
+
+  }
+      section.calculator div.operations {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-column-start: 1;
+    grid-row-start:1;
+  }
+  /** All Buttons Style **/
+  section.calculator button {
+      display:inline-block;
+      padding:0.3em 1.2em;
+      margin:0 0.3em 0.3em 0;
+      border-radius:2em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family:'Roboto',sans-serif;
+      font-weight:300;
+      color:#FFFFFF;
+      background-color:#4eb5f1;
+      text-align:center;
+      transition: all 0.2s;
+      border: 3px solid orange;
+    }
+    /** Operation Buttons **/
+    section.calculator div.operations button {
+      background:orange;
+      color:black;
+      border: 3px solid #4eb5f1;
+    }
+/** Main Dashboard Canvas **/
+main.dashboard {
   display: grid;
   grid-template-columns: 40% 60%;
+  background:#3e4444;
+  color:black;
+  padding:1rem;
 }
-.left-row {
-  grid-column-start: 1;
-  background:red;
-}
+/** Greeting **/
 section.greeting {
   /* background:red; */
 }
-section.calculator {
-  /* background:green; */
-}
+/** Date Clock **/
 section.date-clock {
   /* background:yellow; */
 }
+/** Todo List **/
 section.todo-list {
   /* background:blue; */
 }
