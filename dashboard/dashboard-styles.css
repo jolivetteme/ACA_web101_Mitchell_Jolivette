@@ -1,3 +1,25 @@
+
+/** Main Dashboard Canvas **/
+main.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:50% 50%;
+  background:#3e4444;
+  color:black;
+  padding:1rem;
+}
+/** Greeting **/
+section.greeting {
+  /* background:red; */
+}
+/** Date Clock **/
+section.date-clock {
+  /* background:yellow; */
+}
+/** Todo List **/
+section.todo-list {
+  /* background:blue; */
+}
 /** Calculator **/
 /* section.calculator * {border:1px solid red;}  /*for debugging purposed */
 section.calculator {
@@ -58,24 +80,3 @@ section.calculator {
     grid-column-start: 1;
     grid-row-start:1;
   }
-
-/** Main Dashboard Canvas **/
-main.dashboard {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  background:#3e4444;
-  color:black;
-  padding:1rem;
-}
-/** Greeting **/
-section.greeting {
-  /* background:red; */
-}
-/** Date Clock **/
-section.date-clock {
-  /* background:yellow; */
-}
-/** Todo List **/
-section.todo-list {
-  /* background:blue; */
-}
