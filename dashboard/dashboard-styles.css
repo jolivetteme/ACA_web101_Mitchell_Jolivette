@@ -1,4 +1,10 @@
+section.clock  div.calendar {background:red;display:grid;grid-template-columns: repeat(7,1fr);text-align: center;border:1px solid black;}
+  section.clock  div.calendar div.month {font-size: 2rem;font-weight: bold;}
+    section.clock  div.calendar div.week {}
+      section.clock  div.calendar div.day {color:white;padding:1rem;border:1px solid black;}
 
+section.clock div.date {padding:10px;background:purple;}
+section.clock div.time {padding:10px;background:white;color:black;}
 /** Main Dashboard Canvas **/
 main.dashboard {
   display: grid;
@@ -10,7 +16,14 @@ main.dashboard {
 }
 /** Greeting **/
 section.greeting {
+  box-sizing: border-box;
   /* background:red; */
+  background:green;
+  padding:2rem;
+}
+section.greeting div {
+  font-size: 2rem;
+  color:white;
 }
 /** Date Clock **/
 section.date-clock {
@@ -18,7 +31,7 @@ section.date-clock {
 }
 /** Todo List **/
 section.todo-list {
-  /* background:blue; */
+  background:blue;
 }
 /** Calculator **/
 /* section.calculator * {border:1px solid red;}  /*for debugging purposed */
@@ -26,7 +39,7 @@ section.calculator {
   background:#3D013C;
   padding:1rem;
   display: grid;
-  grid-template-rows: 50% 50%;
+  /* grid-template-rows: 50% 50%; */
 }
   section.calculator div.display {
     border:3px solid #4AF8FE;
@@ -70,13 +83,13 @@ section.calculator {
         border: 3px solid #4eb5f1;
       }
       section.calculator div.numbers {
-    display: grid;
-    grid-template-columns: repeat(3,33.33%);
+        display: grid;
+        grid-template-columns: repeat(3,33.33%);
 
-  }
+      }
       section.calculator div.operations {
-    display:grid;
-    grid-template-columns: 100%;
-    grid-column-start: 1;
-    grid-row-start:1;
-  }
+        display:grid;
+        grid-template-columns: 100%;
+        grid-column-start: 1;
+        grid-row-start:1;
+      }
