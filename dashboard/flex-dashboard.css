@@ -1,0 +1,10 @@
+section.flex-calculator {
+  display: flex;
+  flex-direction: column;
+
+}
+section.flex-calculator .display {background:red;padding:10px;text-align: right;color:white;font-size:2rem;}
+section.flex-calculator * {border:1px solid orange;} /*Debugging borders */
+  section.flex-calculator .buttons {background:green;display:flex;justify-content: center;}
+  section.flex-calculator div.numbers {width:33%;}
+  /* section.flex-calculator div.operations{background:purple;width:%;} */
