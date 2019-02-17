@@ -1,0 +1,17 @@
+body {display: flex;flex-direction: column;}
+  main#calculator {
+    /* display:flex; */
+    /* flex-direction: row; */
+  }
+    section#display{
+      width:100%;border:1px solid black;
+    }
+    section#buttons {
+      background:red;
+      display: flex;
+
+    }
+       div.numbers{border:1px solid black;}
+        .numbers button {}
+       div.operations{border:1px solid black;}
+        .operations button {}

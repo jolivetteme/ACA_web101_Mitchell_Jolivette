@@ -1,0 +1,21 @@
+body {
+
+}
+  body > * {
+    /* border:1px solid black; */
+  }
+  header {
+    /* border: 3px solid red; */
+    display:flex;
+    /* flex-direction: column; */
+    justify-content: flex-end;
+  }
+  header * {
+    border:  1px solid black;
+  }
+    section#my-name {border:3px solid green;}
+    section#my-title {border:3px solid green;}
+  main {padding:10px;}
+    section#my-story article {background:red;}
+    section#my-testimonies {background:green;}
+  footer {}

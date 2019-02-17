@@ -1,0 +1,93 @@
+img {width:100%;}
+body > * {
+  border:6px ridge #9068be;
+  padding:0.625rem;
+}
+body > *:nth-child(3) {
+  border:6px ridge red;
+}
+body {
+  box-sizing: border-box;
+  background: #e1e8f0;
+}
+header {
+  background: #9068be;
+  color:white;
+  background-image:
+    url('header-background.jpeg');
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+}
+/* Navigation Area **/
+aside {margin:0;padding:0;}
+
+aside nav.inline-menu ul {
+  margin:0;
+  padding:0;
+  text-align: right;
+}
+
+aside nav.inline-menu ul li a
+{
+  display: block;
+  padding: 0.625rem;
+  text-decoration: none;
+  color:#ffffff;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+nav.inline-menu ul li a:hover  {
+  background:purple;
+}
+nav.inline-menu ul {
+  display: none;
+  background:orange;
+  list-style-type:none;
+}
+/** End Navigation **/
+main {
+  background:#e1e8f0;
+}
+/** widgets **/
+main section#widgets {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* background:green; */
+}
+  div.widget :first-child {
+    /* TODO: This is where we have to get started with finding out how to lign up these things. */
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+  }
+  div.widget {
+    margin: 0.625rem;
+    background:purple;
+    /* padding:0.625rem; */
+    /* border: 1px solid black; */
+    border-radius: 0.625rem;
+  }
+  div.widget header {
+    border-radius: 0.625rem;
+    /* border: 1px solid black; */
+  }
+  div.widget header .title {
+    color:#fb0060;
+    font-size:1.25rem;
+  }
+  /* div.widget main {color:black;padding:0.625rem;} */
+  div.widget main {
+    margin: 0;padding: 0.625rem;
+
+  }
+  div.widget footer {
+    margin: 0;padding: 0;
+  }
+/** END widgets **/
+footer {
+  background:#ffffff;
+  text-align: right;
+  /* padding:10px; */
+}
