@@ -1,0 +1,13 @@
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+  body {
+    display: grid;
+    /* width:310px; */
+    /* grid-template-columns: 100%; */
+  }
+
+  main.dashboard {
+    background:red;
+  }
+}

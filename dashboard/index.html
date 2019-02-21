@@ -7,25 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="dashboard-styles.css">
-  <link rel="stylesheet" href="flex-dashboard.css">
   <title>Dashboard: Mitchell Jolivette</title>
 </head>
 
 <body>
-  <main class="dashboard">
+  <main id="dashboard">
 
     <!-- Greeting -->
-    <section class="greeting">
+    <section id="greeting">
+      <img src="images/jolivetteme-profile-pic.jpg" alt="Profile Pic" class="profile-pic">
       <div>Oh hai, Mitchell!</div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas nostrum vitae ut aspernatur architecto accusantium dicta, quis necessitatibus odit facilis, aperiam animi, eum molestias saepe! Asperiores placeat corporis quisquam!</p>
     </section>
     <!-- Flex Calculator -->
-    <section id="flex-calculator">
-      <div id="display">0100 0110 0100 1101</div>
-      <div id="buttons">
-        <div id="numbers">
+    <section id="calculator" class="padding border">
+      <div id="display" class="padding">0100 0110 0100 1101</div>
+      <div id="buttons" class="">
+        <div id="numbers" class="">
           <button>1</button>
           <button>2</button>
           <button>3</button>
@@ -39,7 +38,7 @@
           <button>.</button>
           <button>%</button>
         </div>
-        <div id="operations">
+        <div id="operations" class="">
           <button>Power</button>
           <button>Clear</button>
           <button>/</button>
@@ -50,7 +49,7 @@
       </div>
     </section>
     <!-- Clock -->
-    <section class="clock">
+    <section id="clock">
       <div class="date">Feburary 7, 2019</div>
       <div class="time">21:16</div>
       <div class="calendar">
@@ -92,7 +91,7 @@
       </div>
     </section>
     <!-- Todo List -->
-    <section class="todo-list">
+    <section id="todo-list">
       <h3>Todo List: </h3>
       <ul>
         <li><input type="text" placeholder="Enter New Task"></li>
