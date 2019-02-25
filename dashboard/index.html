@@ -8,19 +8,20 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="dashboard-styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
   <title>Dashboard: Mitchell Jolivette</title>
 </head>
 
 <body>
-  <main id="dashboard">
+  <main id="dashboard" class="border">
 
     <!-- Greeting -->
     <section id="greeting">
       <img src="images/jolivetteme-profile-pic.jpg" alt="Profile Pic" class="profile-pic">
-      <div>Oh hai, Mitchell!</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas nostrum vitae ut aspernatur architecto accusantium dicta, quis necessitatibus odit facilis, aperiam animi, eum molestias saepe! Asperiores placeat corporis quisquam!</p>
+      <h2>Oh hai, Mitchell!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sed.</p>
     </section>
-    <!-- Flex Calculator -->
+    <!-- Checkpoint Calculator -->
     <section id="calculator" class="padding border">
       <div id="display" class="padding">0100 0110 0100 1101</div>
       <div id="buttons" class="">
@@ -39,12 +40,14 @@
           <button>%</button>
         </div>
         <div id="operations" class="">
-          <button>Power</button>
-          <button>Clear</button>
-          <button>/</button>
-          <button>x</button>
-          <button>-</button>
-          <button>+</button>
+          <button><i class="fas fa-divide"></i></button>
+          <button><i class="fas fa-times"></i></button>
+          <button><i class="fas fa-minus"></i></button>
+          <button><i class="fas fa-plus"></i></button>
+        </div>
+        <div id="functions">
+          <button><i class="fas fa-power-off"></i></button>
+          <button><i class="fas fa-trash-alt"></i></button>
         </div>
       </div>
     </section>
@@ -52,43 +55,53 @@
     <section id="clock">
       <div class="date">Feburary 7, 2019</div>
       <div class="time">21:16</div>
-      <div class="calendar">
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day"></div>
-        <div class="day">1</div>
-        <div class="day">2</div>
-        <div class="day">3</div>
-        <div class="day">4</div>
-        <div class="day">5</div>
-        <div class="day">6</div>
-        <div class="day">7</div>
-        <div class="day">8</div>
-        <div class="day">9</div>
-        <div class="day">10</div>
-        <div class="day">11</div>
-        <div class="day">12</div>
-        <div class="day">13</div>
-        <div class="day">14</div>
-        <div class="day">15</div>
-        <div class="day">16</div>
-        <div class="day">17</div>
-        <div class="day">18</div>
-        <div class="day">19</div>
-        <div class="day">20</div>
-        <div class="day">21</div>
-        <div class="day">22</div>
-        <div class="day">23</div>
-        <div class="day">24</div>
-        <div class="day">25</div>
-        <div class="day">26</div>
-        <div class="day">27</div>
-        <div class="day">28</div>
-        <div class="day">29</div>
-        <div class="day">30</div>
-        <div class="day">31</div>
-      </div>
+    </section>
+    <!-- Calendar -->
+    <section id="calendar">
+        <span class="day">Sun</span>
+        <span class="day">Mon</span>
+        <span class="day">Tues</span>
+        <span class="day">Wed</span>
+        <span class="day">Thur</span>
+        <span class="day">Fri</span>
+        <span class="day">Satur</span>
+        <span class="nodate"></span>
+        <span class="nodate"></span>
+        <span class="nodate"></span>
+        <span class="nodate"></span>
+        <span class="nodate"></span>
+        <span class="nodate"></span>
+        <span class="date">1</span>
+        <span class="date">2</span>
+        <span class="date">3</span>
+        <span class="date">4</span>
+        <span class="date">5</span>
+        <span class="date">6</span>
+        <span class="date">7</span>
+        <span class="date">8</span>
+        <span class="date">9</span>
+        <span class="date">10</span>
+        <span class="date">11</span>
+        <span class="date">12</span>
+        <span class="date">13</span>
+        <span class="date">14</span>
+        <span class="date">15</span>
+        <span class="date">16</span>
+        <span class="date">17</span>
+        <span class="date">18</span>
+        <span class="date">19</span>
+        <span class="date">20</span>
+        <span class="date">21</span>
+        <span class="current date">22</span>
+        <span class="date">23</span>
+        <span class="date">24</span>
+        <span class="date">25</span>
+        <span class="date">26</span>
+        <span class="date">27</span>
+        <span class="date">28</span>
+        <span class="date">29</span>
+        <span class="date">30</span>
+        <span class="date">31</span>
     </section>
     <!-- Todo List -->
     <section id="todo-list">

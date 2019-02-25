@@ -1,57 +1,195 @@
-.outline {outline:0.1875rem solid black;color:black;}
-.border {border:0.1875rem solid black;color:black;}
+img {
+  width:100%;
+}
+* {
+  /* border: 1px solid black; */
+}
+
 body {
-  /* display: grid; */
 }
 main#dashboard {
-  border: 0.75rem double black;
-  box-sizing: border-box;
-  padding:0.625rem;
   display: grid;
+  grid-template-columns: 100%;
 }
-section#greeting {}
-  sectiont#calculator {}
-  sectiont#clock {}
-  sectiont#todo-list {}
+/* Borders for Debugging  */
+section#greeting {
+  display: grid;
+  grid-template-columns:repeat(3,33.33%);
+  grid-template-rows: auto;
+  background:#b409bd;
+}
+  section#greeting img {
+    order:3;
+  }
+  section#greeting h2 {order:1;}
+  section#greeting p {font-size:0.7rem;padding:0.625rem;color:white;}
 
-.padding {
-  padding: 0.625rem;
-}
-section#greeting .profile-pic {
-  width:6.25rem;
-}
-section#todo-list {
-  /* background:black;color:black; */
-}
-/* Calculator */
 section#calculator {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  background:#2844c6;
 }
-  #display {
-    background:#dfdfdf;
-    color:black;font-size:2rem;
+  button {
+    /* padding:1rem; */
+    color:white;
+    background:purple;
+    border-radius: 1.25rem;
+  }
+  div#display {
+    font-family:Orbitron;
+    padding:0.5rem;
+    background-color:#7a7675;
+    font-size:1.4rem;
     text-align: right;
-    border: 1px solid green;
+    color:white;
   }
-  #buttons {
+
+  div#buttons {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 75% 25%;
+    padding: 1rem;
+    /* background:#22940a; */
   }
-    #numbers {
-      /* width:33%; */
+    div#numbers{
+      display: grid;
+      grid-template-columns: repeat(3,33.33%);
     }
-    #numbers button {
-      width:31%;
-      height: 25%;
+    div#operations{
     }
-    #operations {
-    }
-    #operations button {
-      width:100%;
-    }
-    button:hover {
-      background: #007034;
+    div#operations button {
+      font-family:Orbitron;
+      border-radius: 0;
+      background:#000aff;
       color:white;
-      border:3px solid #06ff00;
+      width:100%;
+      /* font-size:4rem; */
     }
+    div#functions {
+      /* background:white; */
+      display: none;
+    }
+
+
+section#clock {
+  font-family: Orbitron;
+  text-align: center;
+  background:black;
+  color:green;
+}
+section#calendar {
+  background:#27055e;
+  color:white;
+  display: grid;
+  grid-template-columns: repeat(7,8fr);
+  text-align: center;
+}
+.nodate {
+  /* background:inherit; */
+}
+.day {
+  color:white;
+  border-bottom: 1px solid;
+}
+#calendar .date {
+  border: 1px solid white;
+  background:white;
+  color:black;
+  font-family:Orbitron;
+  /* font-size:2rem; */
+  /* padding:1rem; */
+}
+section#todo-list {
+  background:orange;
+}
+section#todo-list ul {}
+/* for iPad tablet portait */
+@media (min-width:412px) {
+  section#greeting {
+    background:white;
+    padding:10px;
+  }
+  section#greeting img {order:1;}
+  section#greeting h2 {order:2;}
+  section#greeting p {
+    order:3;
+    color:purple;
+    font-size:2rem;
+  }
+
+  section#calculator {
+    background:green;
+  }
+  section#calculator button {
+    font-size:4rem;
+  }
+  section#clock {
+    display:flex;
+    justify-content: space-around;
+    padding:0.625rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+  section#calculator div#display {
+    font-size:3rem;
+    padding:2rem;
+  }
+  section#calendar {
+    border:1px solid white;
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  section#todo-list {
+    font-style: 3rem;
+
+  }
+  section#todo-list input {
+    display: flex;
+    font-size:4rem;
+    width:80%;
+    padding:1rem;
+    border-radius:1.25rem;
+  }
+  /** grid ordering for iPads **/
+  section#greeting {order:2}
+  section#calculator {order:3}
+  section#calendar {order:4}
+  section#todo-list {order:1}
+}
+/** for 1024 and above (iPad landscape to desktops. I'm being lazy.) **/
+@media (min-width:1023px) {
+  main#dashboard {
+    display: grid;
+    grid-template-columns:50% 50%;
+  }
+  section#calculator {
+    grid-row-start:3;
+    grid-column-start:1;
+    grid-column-end: 1;
+  }
+  section#clock {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  section#greeting {
+    grid-template-columns:100%;
+    grid-row-start:3;
+    grid-column-start: 2;
+    /* font-size:0.8rem; */
+  }
+  section#greeting p {
+    margin: 0;
+    padding: 0;
+  }
+  section#greeting img {width:50%;}
+
+  section#todo-list{
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+    section#calendar {
+      grid-row-start:2;
+      grid-column-start:2;
+      font-size:1rem;
+    }
+}

@@ -1,0 +1,86 @@
+
+.outline {
+  outline:0.1875rem solid black;
+  color:black;
+}
+.border {
+  border:0.1875rem solid black;
+  color:black;
+}
+
+body {
+  margin:0;padding:0;
+}
+main#dashboard {
+  /* border: 0.75rem double black; */
+  /* box-sizing: border-box; */
+  /* padding:0.625rem; */
+  /* display: grid; */
+  /* grid-template-rows:repeat(2,1fr); */
+  /* grid-template-columns: 100%; */
+  /* border: 1px solid black; */
+}
+section#greeting {}
+  sectiont#calculator {}
+  sectiont#clock {}
+  sectiont#todo-list {}
+
+.padding {
+  padding: 0.625rem;
+}
+section#greeting .profile-pic {
+  width:6.25rem;
+}
+section#todo-list {
+  /* background:black;color:black; */
+}
+/* Calculator */
+section#calculator {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+  #display {
+    background:#dfdfdf;
+    color:black;
+    font-size:1rem;
+    text-align: right;
+    border: 1px solid green;
+  }
+  #buttons {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+    #numbers {
+      /* width:33%; */
+    }
+    #numbers button {
+      width:31%;
+      height: 25%;
+    }
+    #operations {
+    }
+    #operations button {
+      width:100%;
+    }
+    button:hover {
+      background: #007034;
+      color:white;
+      border:3px solid #06ff00;
+    }
+section#clock {
+  background:orange;
+}
+section#calendar {
+  background:green;
+  display: grid;
+  grid-template-columns:repeat(7,1fr);
+  color:white;
+}
+section#calendar > span {
+  padding: 1rem;
+}
+section#calendar .current {
+  color:black;
+  font-weight:bolder;
+  font-size:150%;
+}
