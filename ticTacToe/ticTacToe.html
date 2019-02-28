@@ -9,16 +9,35 @@
   <title>ticTacToe</title>
 </head>
 <body>
+
   <main id="gameboard">
-    <div class="square"><button onclick="changeMarkerToO"></button></div>
-    <div class="square"><button onclick="changeMarkerToX"></button></div>
-    <div class="square"><button onclick="changeMarkerToO"></button></div>
-    <div class="square"><button onclick="changeMarkerToX"></button></div>
-    <div class="square"><button onclick="changeMarkerToX"></button></div>
-    <div class="square"><button onclick="changeMarkerToO"></button></div>
-    <div class="square"><button onclick="changeMarkerToX"></button></div>
-    <div class="square"><button onclick="changeMarkerToX"></button></div>
-    <div class="square"><button onclick="changeMarkerToO"></button></div>
+    <div class="square">
+      <button id="top-left" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="top" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="top-right" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="left" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="home" onclick="changeMarkerToX()"></button>
+    </div>
+    <div class="square">
+      <button id="right" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="bottom-left" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="bottom" onclick="changeMarkerToO()"></button>
+    </div>
+    <div class="square">
+      <button id="bottom-right" onclick="changeMarkerToO()"></button>
+    </div>
   </main>
 
   <script src="scripts/ticTacToe.js" charset="utf-8"></script>
