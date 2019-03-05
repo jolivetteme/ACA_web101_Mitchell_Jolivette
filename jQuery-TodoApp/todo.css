@@ -1,0 +1,32 @@
+.border {border:3px solid aqua;}
+.outline {outline:3px solid forestgreen;}
+ul {
+  list-style: none;
+}
+main#todo-app {
+}
+header#todo-lists {}
+
+main#todo-list-items {
+  background:#6484e4;
+}
+
+#todo-list-items ul {
+  display: grid;
+  margin:0;padding:24px;
+}
+
+#todo-list-items ul > li {
+  display:flex;
+  justify-content: flex-start;
+}
+#todo-list-items ul > li > a {
+  font-size:1em;
+  /* display: inline-block; */
+  color:white;
+  text-decoration:none;
+  padding:10px;
+}
+#todo-list-items ul > li > a:hover {
+  color:#005d06;
+}
