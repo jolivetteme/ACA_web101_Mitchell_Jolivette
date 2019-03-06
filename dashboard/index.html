@@ -3,17 +3,35 @@
 
 <head>
   <meta charset="UTF-8">
+  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- GoogleFont -->
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+  <!-- Normalize -->
   <link rel="stylesheet" href="normalize.css">
+
+  <!-- My Styles -->
   <link rel="stylesheet" href="dashboard-styles.css">
+
+  <!-- FontAwesome  -->
   <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
+  <!-- My Scripts -->
+  <script src="geolocation.js"></script>
   <title>Dashboard: Mitchell Jolivette</title>
+
 </head>
 
 <body>
   <main id="dashboard" class="border">
+
+    <!-- Geolocation - Location  -->
+    <section id="geolocation">
+      Loading Location
+    </section>
 
     <!-- Greeting -->
     <section id="greeting">
@@ -21,6 +39,7 @@
       <h2>Oh hai, Mitchell!</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sed.</p>
     </section>
+
     <!-- Checkpoint Calculator -->
     <section id="calculator" class="padding border">
       <div id="display" class="padding">0100 0110 0100 1101</div>
@@ -51,11 +70,13 @@
         </div>
       </div>
     </section>
+
     <!-- Clock -->
     <section id="clock">
       <div class="date">Feburary 7, 2019</div>
       <div class="time">21:16</div>
     </section>
+
     <!-- Calendar -->
     <section id="calendar">
         <span class="day">Sun</span>
@@ -103,6 +124,7 @@
         <span class="date">30</span>
         <span class="date">31</span>
     </section>
+
     <!-- Todo List -->
     <section id="todo-list">
       <h3>Todo List: </h3>
