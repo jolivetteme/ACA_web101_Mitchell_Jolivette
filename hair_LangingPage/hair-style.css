@@ -2,6 +2,7 @@ img {width:100%;}
 
 main#page {
   margin:0;padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 header a {
 }
@@ -9,7 +10,9 @@ header a {
     text-align: center;
   }
   section#logo img {width:70%;}
+
   nav#top-nav {
+    display: block;
   }
     nav#top-nav .menu-control {
       text-align: center;
@@ -22,56 +25,116 @@ header a {
     }
     nav#top-nav ul {
       background:#0ba39c;
-      margin:0;padding:0;
-      border: 1px solid black;
+      margin:0;
+      padding:0;
       position: absolute;
+      width: 100%;
+      z-index: 999;
       display: block;
+      opacity: 0.9;
     }
     nav#top-nav ul > li {
     }
     nav#top-nav ul li > a {
-      border: 1px solid white;
       display: block;
       color:#fff;
       text-decoration: none;
       text-transform: uppercase;
-      border: 1px solid black;
       padding:0.625rem;
     }
     nav#top-nav ul a:hover {
       background:#000;
       color:white;
     }
-section#hero-unit {
-}
-section#hero-unit article {
-}
-  section#hero-unit img {
-    display:block;
+@media screen and (min-width:768px){
+  nav#top-nav .menu-control {
+    display:none;
   }
-  section#hero-unit article div#action {
-    text-shadow: 2px 2px #333;
-    color:white;
-    text-align: left;
+  nav#top-nav ul {
+    list-style: none;
+    display:flex !important;
+    justify-content: center;
+  }
+  main > section {
+    display:grid;
+    grid-template-columns:repeat(3,33.33%);
+  }
+  main > section > article  {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+  }
+  main > section > article > img {
+    border:1px solid red;
   }
 
-  section#hero-unit article div#action .title {
-    color:#000;
+}
+#hero-unit {
+  display:block;
+}
+#hero-unit > article {
+  background:url('img/hero-background.jpg');
+  background-position: center;
+  background-size: cover;
+  text-shadow: 2px 2px #333;
+  text-align: right;
+}
+
+  #action {
+    color:white;
+    border: 3px solid orange;
+    text-align: right;
+    padding-bottom: 1rem;
+  }
+
+  #action > h3 {
     font-size: 1.5rem;
-    background:#fff;
-    display: inline-block;
+    display: block;
     padding:1rem;
   }
-  section#hero-unit article div#action p {
+  #action p {
     background:grey;
     display:inline;
+    font-size: 1.25rem;
+    opacity: 0.75;
   }
-  section#hero-unit article div#action a {
+  #action a {
     display: block;
-    width:50px;
     background: #0ba39c;
+    border-radius:50px;
     text-decoration: none;
     color:white;
+    padding:1rem;
   }
-    section#hero-unit article div#action a:hover {
+    #action a:hover {
+      background:#373737;
+      border-top: 3px solid white;
     }
+    section > article {
+      padding:10px 20px;
+    }
+    section > article > h2 {
+      padding:0;margin:0;
+    }
+section > article img {
+  border:3px solid black;
+}
+footer {
+  background:#369943;
+  font-size: 1rem;
+  padding:1rem 4rem;
+  margin-bottom:1rem;
+  text-align: center;
+}
+footer i {
+  border:1px solid white;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  padding:1rem;
+  margin:0.625rem;
+}
+footer i:hover {
+  background:#000;
+  box-shadow: 5px 10px #888888;
+  border-radius: 1rem;
+}
